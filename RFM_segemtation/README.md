@@ -176,4 +176,4 @@ This segmentation allows businesses to:
 
 With this SQL-driven approach, RFM analysis becomes scalable and easy to integrate into any data pipeline or CRM strategy.
 
-📄 [View Full SQL Script](./RFM_segemtation/RFM_Segmentation.sql)
+📄 [View Full SQL Script](./RFM_Segmentation.sql)
