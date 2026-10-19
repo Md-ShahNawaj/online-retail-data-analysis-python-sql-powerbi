@@ -210,6 +210,7 @@ An interactive Power BI report built on the PostgreSQL views and CSV outputs, de
 - **29.4%** of customers are Loyal or Active, the core high-value customer base.
 
 To open: download the `.pbix` file and open it in **Power BI Desktop**.
+
 ---
 
 ## How to Run
