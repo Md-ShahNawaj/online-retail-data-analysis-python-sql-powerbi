@@ -188,14 +188,28 @@ For full segment definitions and scoring logic, see [`04_RFM_segmentation/README
 
 ---
 
-### 5. Power BI Dashboard
+### 5. Power BI Dashboard *(in progress)*
 
 **File:** [`05_power_bi_dashboard/Retail_analysis.pbix`](05_power_bi_dashboard/Retail_analysis.pbix)
 
-An interactive Power BI report built on top of the PostgreSQL views and CSV outputs. It brings together all analyses into a single dashboard for business stakeholder reporting.
+An interactive Power BI report built on the PostgreSQL views and CSV outputs, designed to present the analysis to business stakeholders.
+
+| Page | Purpose | Status |
+|------|---------|--------|
+| 1. Sales Overview | Revenue, orders, customers, average order value, repeat-customer rate, monthly trends | 🔄 In progress |
+| 2. Customer Segmentation (RFM) | Segment sizes, segment distribution and key customer KPIs | ✅ First version complete |
+| 3. Cohort Retention | Monthly retention heatmap and retention trends | 🔄 Planned |
+
+#### Page 2 – Customer Segmentation (RFM)
+
+![RFM Dashboard](05_power_bi_dashboard/rfm_page.png)
+
+**Key findings:**
+- **23%** of customers (1,354) have churned, so a win-back campaign could recover lost revenue.
+- **1,629** customers are at risk of leaving. They bought regularly before, so they should be targeted early.
+- **29.4%** of customers are Loyal or Active, the core high-value customer base.
 
 To open: download the `.pbix` file and open it in **Power BI Desktop**.
-
 ---
 
 ## How to Run
@@ -256,4 +270,4 @@ Open [`05_power_bi_dashboard/Retail_analysis.pbix`](05_power_bi_dashboard/Retail
 - **RFM segmentation** identifies actionable customer groups — from loyal high-spenders to at-risk churners — enabling targeted marketing campaigns
 - **Cohort analysis** reveals customer retention trends over 12 months, showing how well different acquisition cohorts are retained
 - **KPI views** provide a ready-to-use analytical layer in PostgreSQL, powering both ad-hoc queries and the Power BI dashboard
-- **Interactive dashboard** delivers business-ready visuals for revenue trends, geographic breakdowns, product performance, and customer segments
+- **Power BI dashboard (in progress)** — the RFM segmentation page is complete; sales overview and cohort retention pages are being built
